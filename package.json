@@ -1,0 +1,26 @@
+{
+  "name": "random-question-backend",
+  "version": "1.0.0",
+  "description": "The server for random-interview-questions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose",
+    "test-watch": "jest --watchAll --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lizkavalski/random-question-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lizkavalski/random-question-backend/issues"
+  },
+  "homepage": "https://github.com/lizkavalski/random-question-backend#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jest": "^25.1.0",
+    "supertest": "^4.0.2"
+  }
+}
