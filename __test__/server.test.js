@@ -1,7 +1,7 @@
 
 
-const { server } = require('../server.js');
-const supergoose = require('supergoose.js');
+const { server } = require('../server/server.js');
+const supergoose = require('./supergoose.js');
 const mockRequest = supergoose(server);
 
 describe('web server', () => {
