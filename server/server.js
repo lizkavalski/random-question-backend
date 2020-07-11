@@ -30,15 +30,15 @@ app.get('/question/random', (req, res) => {
   res.json(randomQuestions());
 });
 
-app.get('/jokes/ten', (req, res) => {
+app.get('/question/ten', (req, res) => {
   res.json(randomTen());
 });
 
-app.get('/jokes/:type/random', (req, res) => {
+app.get('/question/:type/random', (req, res) => {
   res.json(questionByType(req.params.type, 1));
 });
 
-app.get('/jokes/:type/ten', (req, res) => {
+app.get('/question/:type/ten', (req, res) => {
   res.json(questionByType(req.params.type, 10));
 });
 app.use('*',notfound);
