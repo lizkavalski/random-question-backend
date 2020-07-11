@@ -1,5 +1,7 @@
 const questions = require('../data.json');
-
+/**
+* Pulls a random object from the data.json
+*/
 const randomQuestions = () => {
   return questions[Math.floor(Math.random() * questions.length)];
 };
@@ -23,10 +25,12 @@ const randomN = (questionArray, n) => {
   });
 };
 
-const randomTen = () => randomN(questions, 10);
-
+/**
+ * @param {*} type, refers to the type of question
+ * @param {*} n, how many random question
+ */
 const questionByType = (type, n) => {
   return randomN(questions.filter(question => question.type === type), n);
 };
 
-module.exports = { questions, randomQuestions, randomN, randomTen, questionByType };
+module.exports = { questions, randomQuestions, questionByType };

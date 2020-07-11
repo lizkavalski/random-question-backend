@@ -32,7 +32,7 @@ describe('web server', () => {
   it('should respond properly on request to /categories', () => {
 
     return mockRequest
-      .get('/categories')
+      .get('/random')
       .expect(200);
 
   });
