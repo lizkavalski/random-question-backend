@@ -1,4 +1,4 @@
-const questions = require('../data.JSON');
+const questions = require('../data.json');
 
 const randomQuestions = () => {
   return questions[Math.floor(Math.random() * questions.length)];
