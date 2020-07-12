@@ -23,14 +23,13 @@ app.get('/', (req, res) => {
 app.get('/question',(req,res)=>{
   res.json(questions);
 });
-
 app.get('/question/random', (req, res) => {
   res.json(randomQuestions());
 });
 
 
 app.get('/question/:type/random', (req, res) => {
-  res.json(questionByType(req.params.type, 1));
+  res.json(questionByType(req.params.type));
 });
 
 app.use('*',notfound);
