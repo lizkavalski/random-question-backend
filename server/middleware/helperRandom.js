@@ -1,4 +1,4 @@
-const questions = require('../data.json');
+const questions = require('../data/data.json');
 /**
 * Pulls a random object from the data.json
 */
