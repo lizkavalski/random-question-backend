@@ -5,14 +5,17 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "test": "jest --verbose",
+    "test": "jest",
     "test-watch": "jest --watchAll --verbose"
+  },
+  "jest": {
+    "verbose": true
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lizkavalski/random-question-backend.git"
   },
-  "author": "",
+  "author": "Liz Kavalski",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lizkavalski/random-question-backend/issues"

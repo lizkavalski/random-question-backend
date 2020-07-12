@@ -1,7 +1,6 @@
-const data = require('../server/data.json');
 const app = require('../server/server.js');
 const request = require('supertest');
-const { response } = require('express');
+// const { response } = require('express');
 // const request = supertest(app);
 
 describe('testing endpoints', () => {
