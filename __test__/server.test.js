@@ -1,40 +1,50 @@
+const data = require('../server/data.json');
+const app = require('../server/server.js');
+const request = require('supertest');
+const { response } = require('express');
+// const request = supertest(app);
 
+describe('testing endpoints', () => {
 
-const { server } = require('../server/server.js');
-const supergoose = require('./supergoose.js');
-const mockRequest = supergoose(server);
-
-describe('web server', () => {
-
-  // it('should respond with a 500 on an error', () => {
-
-  //   return mockRequest
-  //     .put('/dada.json/0')
-  //     .expect(500);
-
-  // });
-
-  // it('should respond with a 404 on an invalid route', () => {
-
-  //   return mockRequest
-  //     .get('/not-real')
-  //     .expect(404);
-  // });
-
-  it('should respond with a 404 on an invalid method', () => {
-
-    return mockRequest
-      .post('/')
-      .expect(404);
-
+  it('GET all the question', done => {
+    request(app)
+      .get('/question')
+      .then( res => {
+        expect(res.status).toBe(200);
+        done();
+      });
   });
 
-  it('should respond properly on request to /categories', () => {
+  it('GET a random question', done => {
+    request(app)
+      .get('/question/random')
+      .then( res => {
+        expect(res.status).toBe(200);
+        done();
+      });
+  });
 
-    return mockRequest
-      .get('/random')
-      .expect(200);
+  it('GET a random question by type', done => {
+    request(app)
+      .get('/question/:type/random')
+      .then( res => {
+        expect(res.status).toBe(200);
+        done();
+      });
+  });
 
+});
+
+describe('testing error', () => {
+
+  it('send an 404 message', done => {
+    request(app)
+      .get('/question/ranom')
+      .then( res => {
+        expect(res.status).toBe(404);
+        expect(res.body.message).toBe('Cannot find the page your looking for');
+        done();
+      });
   });
 
 });

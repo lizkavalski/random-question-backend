@@ -5,6 +5,13 @@ const errorHandler = require('../server/middleware/error.js');
 const {questions,randomQuestions, questionByType} = require('../server/middleware/helperRandom');
 
 const app = express();
+
+// const startServer = (port) => {
+//   app.listen(port, () => {
+//     console.log('Server is up and running on port', port);
+//   });
+// };
+
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
   next();
@@ -16,11 +23,6 @@ app.get('/', (req, res) => {
 app.get('/question',(req,res)=>{
   res.json(questions);
 });
-
-app.get('/random_question', (req, res) => {
-  res.json(randomQuestions());
-});
-
 
 app.get('/question/random', (req, res) => {
   res.json(randomQuestions());
@@ -34,10 +36,6 @@ app.get('/question/:type/random', (req, res) => {
 app.use('*',notfound);
 app.use(errorHandler);
 
-module.exports = {
-  server:app,
-  start: port =>{
-    let PORT = port || process.env.PORT || 3000;
-    app.listen(PORT, () => console.log(`listening on ${PORT}`));
-  },
-};
+
+module.exports = app;
+
