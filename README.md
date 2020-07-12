@@ -1,6 +1,6 @@
 # random-question-backend
 
-The server for random-interview-questions.
+This is a little server that stores career based questions. The server allows a person to only 'GET' a question at random.
 
 [![Build Status](https://travis-ci.com/lizkavalski/random-question-backend.svg?branch=master)](https://travis-ci.com/lizkavalski/random-question-backend)
 
