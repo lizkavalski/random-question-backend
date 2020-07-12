@@ -9,7 +9,7 @@
     "test-watch": "jest --watchAll --verbose"
   },
   "jest": {
-    "testEnvironment": "node"
+    "verbose": true
   },
   "repository": {
     "type": "git",
