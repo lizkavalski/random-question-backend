@@ -9,7 +9,11 @@ To get all the question use `https://random-interview.herokuapp.com/question`<br
 To get a random question use `https://random-interview.herokuapp.com/question/random`<br>
 To get a random question use `https://random-interview.herokuapp.com/question/:type/random`
   * In the `:type` seation you can use:
-    * Self-Perception
-    * Self-Expression
-    * Interpersonal
-    * Decison Making
+    * self-perception
+    * self-expression
+    * interpersonal
+    * decison-making
+    * stress-management
+    * motivators
+    * general-question
+
