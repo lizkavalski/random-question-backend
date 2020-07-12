@@ -4,7 +4,7 @@
   "description": "The server for random-interview-questions.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node index.js",
     "test": "jest",
     "test-watch": "jest --watchAll --verbose"
   },
