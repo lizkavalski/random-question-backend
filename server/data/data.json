@@ -17,7 +17,7 @@
   {
     "id":"4",
     "type":"self-perception",
-    "question":"What's the one thing your former manager would like you to improvw on?"
+    "question":"What's the one thing your former manager would like you to improve on?"
   },
   {
     "id":"5",
@@ -52,7 +52,7 @@
   {
     "id":"11",
     "type":"interpersonal",
-    "question":"Tell me about a tetam project when you had to work with someone difficult."
+    "question":"Tell me about a team project when you had to work with someone difficult."
   },
   {
     "id":"12",
@@ -72,7 +72,7 @@
   {
     "id":"15",
     "type":"stress-management",
-    "question":"Tell me how you handled a diddicult situation."
+    "question":"Tell me how you handled a difficult situation."
   },
   {
     "id":"16",
