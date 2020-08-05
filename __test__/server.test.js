@@ -25,7 +25,7 @@ describe('testing endpoints', () => {
 
   it('GET a random question by type', done => {
     request(app)
-      .get('/question/:type/random')
+      .get('/question/random/:type')
       .then( res => {
         expect(res.status).toBe(200);
         done();
