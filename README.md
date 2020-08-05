@@ -7,7 +7,7 @@ This is a little server that stores career based questions. The server allows a 
 ### How to use it
 To get all the question use `https://random-interview.herokuapp.com/question`<br>
 To get a random question use `https://random-interview.herokuapp.com/question/random`<br>
-To get a random question use `https://random-interview.herokuapp.com/question/:type/random`
+To get a random question use `https://random-interview.herokuapp.com/question/random/:type`
   * In the `:type` seation you can use:
     * self-perception
     * self-expression
