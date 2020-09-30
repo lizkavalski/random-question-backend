@@ -1,7 +1,5 @@
 const app = require('../server/server.js');
 const request = require('supertest');
-// const { response } = require('express');
-// const request = supertest(app);
 
 describe('testing endpoints', () => {
 

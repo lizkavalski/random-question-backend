@@ -6,12 +6,6 @@ const {questions,randomQuestions, questionByType} = require('../server/middlewar
 
 const app = express();
 
-// const startServer = (port) => {
-//   app.listen(port, () => {
-//     console.log('Server is up and running on port', port);
-//   });
-// };
-
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
   next();
