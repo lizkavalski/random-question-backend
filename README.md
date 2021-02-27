@@ -10,9 +10,10 @@ __Tools used__:
 Express, Heroku, Jest, and JSON.
 
 __Deployed server__:
+
 To get all the question use `https://random-interview.herokuapp.com/question`<br>
 To get a random question use `https://random-interview.herokuapp.com/question/random`<br>
-To get a random question use `https://random-interview.herokuapp.com/question/random/:type`
+To get a random question by type use `https://random-interview.herokuapp.com/question/random/{:type}`
 
 ## Problem Domain
 This project is part of [another project](https://github.com/lizkavalski/random-interview-questions) that allows people to practice behavioral interview based questions.
@@ -20,11 +21,11 @@ This project is part of [another project](https://github.com/lizkavalski/random-
 ## Solution
 Create an server that has all the interview-based question in a JSON file. Then with some middleware ‘get’ a random question from the JSON file to send back to the user.
 
-Currently their are three routes: /questions, /random, and /question/random/:type.
+Currently their are three routes: `/questions`, `/question/random`, and `/question/random/:type`.
 
-The /question route will retrieve all the questions in server. While /question/random will only grab one of the questions at random. The /question/random/:type will grab a random question based on the type question.
+The `/question` route will retrieve all the questions in server. While `/question/random` will only grab one of the questions at random. The `/question/random/{:type}` will grab a random question based on the type question.
 
-The type of questions are :
+The type of questions are:
 
   * Self-perception: questions relate to how the interviewee see themselves like” what is a strength/weakness of yours?”
   * Self-expression: relate more on creative thinking.
